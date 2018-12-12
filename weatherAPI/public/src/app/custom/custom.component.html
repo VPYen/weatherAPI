@@ -1,0 +1,24 @@
+<div class="cityBox" *ngIf="!weather">
+  <h2>My City</h2>
+  <form (submit)="getMyWeather()">
+    <label for="zip">Zip Code</label>
+    <div class="input-field">
+      <input type="text" id="zip" name="zipCode" [(ngModel)]="zipCode"/>
+    </div>
+    <label for="country">Country Code</label>
+    <div class="input-field">
+      <input type="text" id="country" name="countryCode" value="{{countryCode}}" [(ngModel)]="countryCode"/>
+    </div>
+    <button type="submit" class="btn waves-effect waves-light light-blue accent-3">Get My Weather</button>
+  </form>
+</div>
+
+<div class="cityBox" *ngIf="weather">
+  <h1>{{weather.name}}</h1>
+  <p><b>Humidity: </b>{{weather.main.humidity}}%</p>
+  <p><b>Temperature (Avg): </b>{{weather.main.temp}}°F</p>
+  <p><b>Temperature (High): </b>{{weather.main.temp_max}}°F</p>
+  <p><b>Temperature (Low): </b>{{weather.main.temp_min}}°F</p>
+  <p><b>Status: </b>{{weather.weather[0].description}}</p>
+  <button type="button" (click)="newWeather()" class="btn waves-effect waves-light light-blue accent-3">Get My Weather</button>
+</div>

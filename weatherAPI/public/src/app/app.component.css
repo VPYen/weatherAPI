@@ -1,0 +1,25 @@
+#cities {
+  width: 400px;
+  border-radius: 5px;
+}
+
+.dropdown-trigger {
+  height: 60px;
+}
+
+.dropdown-content li > a {
+  color: white;
+}
+
+.navLink {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .brand-logo {
+    display: none;
+  }
+  .dropdown-trigger {
+    display: none;
+  }
+}

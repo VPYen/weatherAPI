@@ -1,0 +1,30 @@
+.cityBox {
+  width: 800px;
+  padding: 50px;
+  margin: 0px auto;
+  margin-top: 25%;
+  text-shadow: 0px 10px 10px black;
+  border-radius: 20px;
+  border: 3px solid lightblue;
+  box-shadow: 0px 0px 5px 5px aqua;
+}
+
+label, input{
+  color: white;
+  font-size: 18px;
+}
+
+.btn {
+  float: right;
+  box-shadow: 0px 0px 8px 8px white;
+}
+
+@media screen and (max-width: 600px) {
+  .cityBox {
+    margin-top: 50%;
+    width: 300px;
+  }
+  form {
+    height: 300px;
+  }
+}

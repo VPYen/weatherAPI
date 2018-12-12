@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div class="navbar-fixed">
+  <nav>
+    <div class="row nav-wrapper blue accent-2">
+      <h5 class="brand-logo center">My Weather Forecast</h5>
+      <ul id="nav-mobile" class="left">
+        <li class="navLink"><a class="dropdown-trigger" href="#!" data-target="cities">Cities<i class="material-icons bottom"></i></a></li>
+        <li class="navLink"><a type="button" [routerLink]="['/custom']">My City</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<ul id="cities" class="dropdown-content grey">
+  <li><a type="button" [routerLink]="['/san-jose']">San Jose - CA</a></li>
+  <li><a type="button" [routerLink]="['/burbank']">Burbank - CA</a></li>
+  <li><a type="button" [routerLink]="['/seattle']">Seattle - WA</a></li>
+  <li><a type="button" [routerLink]="['/dallas']">Dallas - TX</a></li>
+  <li><a type="button" [routerLink]="['/chicago']">Chicago - IL</a></li>
+  <li><a type="button" [routerLink]="['/washington-dc']">Washington D.C.</a></li>
+</ul>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
